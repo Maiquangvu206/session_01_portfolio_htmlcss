@@ -14,7 +14,7 @@ header {
     font-weight: 700;
     font-size: 1.25rem;
     letter-spacing: 1px;
-    color: var(--color-dark);
+    color: var(--color-primary);
 }
 
 .nav-links {
@@ -44,7 +44,7 @@ header {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--color-dark);
+    color: var(--color-secondary);
 }
 
 @media (max-width: 768px) {
@@ -70,7 +70,7 @@ header {
         display: none;
     }
 
-    .menu-toggle:checked ~ .nav-links {
+    .menu-toggle:checked~.nav-links {
         display: flex;
     }
 
