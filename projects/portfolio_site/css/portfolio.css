@@ -1,15 +1,19 @@
 .portfolio-grid {
     display: grid;
-    grid-template-columns: 1fr; /* mobile default */
+    grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
-    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 1024px) {
-    .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .portfolio-item {
@@ -32,7 +36,7 @@
 .portfolio-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -53,13 +57,23 @@
 
 .portfolio-overlay p {
     margin: 4px 0 0 0;
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 0.9rem;
 }
 
 /* Header + filters styling */
-.portfolio-section .container > h2 { text-align: center; margin-bottom: 1rem; }
-.portfolio-filters { display:flex; gap:16px; justify-content:center; margin-bottom:2rem; }
+.portfolio-section .container>h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.portfolio-filters {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
 .filter-btn {
     padding: 10px 22px;
     border-radius: 999px;
@@ -69,16 +83,30 @@
     font-weight: 600;
     cursor: pointer;
 }
-.filter-btn.active { background: var(--color-primary, #5b5ff7); color: white; }
+
+.filter-btn.active {
+    background: var(--color-primary, #5b5ff7);
+    color: white;
+}
 
 /* larger layout spacing like screenshot */
-.portfolio-grid { gap: 2.25rem; }
-.portfolio-item { border-radius: 16px; box-shadow: 0 10px 30px rgba(2,6,23,0.06); }
+.portfolio-grid {
+    gap: 2.25rem;
+}
+
+.portfolio-item {
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+}
 
 @media (min-width: 768px) {
-    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 1024px) {
-    .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

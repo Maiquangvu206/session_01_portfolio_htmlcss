@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/base.css">
 
 </head>
 
@@ -127,51 +128,90 @@
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="web">
-                    <img src="img\images.jpg" alt="Project 1">
-                    <div class="portfolio-overlay">
-                        <h3>E-Commerce Website</h3>
-                        <p>React + Node.js</p>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="web">
-                    <img src="img\images (1).jpg" alt="Blog Project">
-                    <div class="portfolio-overlay">
-                        <h3>Blog Platform</h3>
-                        <p>Gatsby + Markdown</p>
-                    </div>
+                    <a href="#lightbox-1" class="lightbox-link">
+                        <img src="img/images.jpg" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Website</h3>
+                            <p>React + Node.js</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="portfolio-item" data-category="web">
-                    <img src="img\images (2).jpg" alt="Dashboard">
-                    <div class="portfolio-overlay">
-                        <h3>SaaS Dashboard</h3>
-                        <p>React + Tailwind</p>
-                    </div>
+                    <a href="#lightbox-2" class="lightbox-link">
+                        <img src="img/images (1).jpg" alt="Blog Project">
+                        <div class="portfolio-overlay">
+                            <h3>Blog Platform</h3>
+                            <p>Gatsby + Markdown</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <a href="#lightbox-3" class="lightbox-link">
+                        <img src="img/images (2).jpg" alt="Dashboard">
+                        <div class="portfolio-overlay">
+                            <h3>SaaS Dashboard</h3>
+                            <p>React + Tailwind</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="portfolio-item" data-category="mobile">
-                    <img src="img\images (3).jpg" alt="Mobile App 1">
-                    <div class="portfolio-overlay">
-                        <h3>Mobile App A</h3>
-                        <p>Flutter</p>
-                    </div>
+                    <a href="#lightbox-4" class="lightbox-link">
+                        <img src="img/images (3).jpg" alt="Mobile App 1">
+                        <div class="portfolio-overlay">
+                            <h3>Mobile App A</h3>
+                            <p>Flutter</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="portfolio-item" data-category="mobile">
-                    <img src="img\images (4).jpg" alt="Mobile App 2">
-                    <div class="portfolio-overlay">
-                        <h3>Mobile App B</h3>
-                        <p>React Native</p>
-                    </div>
+                    <a href="#lightbox-5" class="lightbox-link">
+                        <img src="img/images (4).jpg" alt="Mobile App 2">
+                        <div class="portfolio-overlay">
+                            <h3>Mobile App B</h3>
+                            <p>React Native</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="portfolio-item" data-category="design">
-                    <img src="img\images (5).jpg" alt="Design Case">
-                    <div class="portfolio-overlay">
-                        <h3>Branding Case Study</h3>
-                        <p>UI/UX Design</p>
-                    </div>
+                    <a href="#lightbox-6" class="lightbox-link">
+                        <img src="img/images (5).jpg" alt="Design Case">
+                        <div class="portfolio-overlay">
+                            <h3>Branding Case Study</h3>
+                            <p>UI/UX Design</p>
+                        </div>
+                    </a>
                 </div>
+            </div>
+
+            <!-- Lightbox targets (CSS only) -->
+            <div id="lightbox-1" class="lightbox">
+                <img src="img/images.jpg" alt="Project 1">
+                <a href="#" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-2" class="lightbox">
+                <img src="img/images (1).jpg" alt="Blog Project">
+                <a href="#" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-3" class="lightbox">
+                <img src="img/images (2).jpg" alt="Dashboard">
+                <a href="#" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-4" class="lightbox">
+                <img src="img/images (3).jpg" alt="Mobile App 1">
+                <a href="#" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-5" class="lightbox">
+                <img src="img/images (4).jpg" alt="Mobile App 2">
+                <a href="#" class="lightbox-close">&times;</a>
+            </div>
+            <div id="lightbox-6" class="lightbox">
+                <img src="img/images (5).jpg" alt="Design Case">
+                <a href="#" class="lightbox-close">&times;</a>
             </div>
         </div>
     </section>
